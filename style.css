@@ -156,7 +156,9 @@ section {
 }
 .about,
 .services,
-.skills {
+.skills,
+.teams,
+.experience {
   font-family: "Poppins", sans-serif;
 }
 section .title {
@@ -244,15 +246,18 @@ section .title::after {
 }
 
 /* services or project styling */
-.services {
+.services,
+.teams {
   color: #fff;
   background: #3975d0;
 }
-.services .title::before {
+.services .title::before,
+.teams .title::before {
   background: #fff;
 }
 
-.services .title::after {
+.services .title::after,
+.teams .title::after {
   background: #3975d0;
   content: "Work Done";
 }
@@ -399,6 +404,86 @@ section .title::after {
 .skills .skills-content .right .python::before {
   width: 70%;
 }
+
+/* teams section styling */
+
+.teams .title::after {
+  content: "What I learn";
+}
+
+.teams .carousel .card {
+  background: rgb(0 0 0 / 20%);
+  border-radius: 5px;
+  padding: 25px 25px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.teams .carousel .card:hover {
+  background: #fa8072;
+}
+
+.teams .carousel .card .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+.teams .carousel .card:hover .box {
+  transform: scale(1.05);
+}
+.teams .carousel .card .text {
+  font-size: 25px;
+  font-weight: 500;
+  margin: 10px 0 7px 0;
+}
+
+.teams .carousel .card i {
+  height: 150px;
+  width: 150px;
+  font-size: 107px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #fa8072;
+  transition: all 0.3s ease;
+  /* align-items: center; */
+  padding: 18px;
+}
+
+.teams .carousel .card:hover i {
+  border-color: #fff;
+}
+
+.owl-dots {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.owl-dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 5px;
+  outline: none !important;
+  border-radius: 50%;
+  border: 2px solid #fa8072 !important;
+  transition: all 0.3s ease;
+}
+
+.owl-dot.active {
+  width: 35px;
+  border-radius: 14px;
+}
+
+.owl-dot:hover {
+  background: #fa8072 !important ;
+}
+
+/* experience styling */
+.experience .title::after {
+  content: "What I Know";
+}
+
 /* responsive styling  */
 
 @media (max-width: 1300px) {
