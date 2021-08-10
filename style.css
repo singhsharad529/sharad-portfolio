@@ -748,4 +748,7 @@ section .title::after {
 
     border: 3px solid #fa8072;
   }
+  .content {
+    padding: 20px 0px;
+  }
 }
