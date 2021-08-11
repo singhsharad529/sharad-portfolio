@@ -515,7 +515,7 @@ section .title::after {
 
 /* experience styling */
 .experience .title::after {
-  content: "What I Know";
+  content: "What I Work";
 }
 
 /* experience timeling */
