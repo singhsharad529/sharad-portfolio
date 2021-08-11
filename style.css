@@ -7,6 +7,10 @@
   text-decoration: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .max-width {
   max-width: 1300px;
   padding: 0 80px;
@@ -59,6 +63,7 @@
 }
 
 .navbar .menu li a {
+  display: block;
   color: #fff;
   font-size: 18px;
   font-weight: 500;
@@ -84,6 +89,32 @@
   font-size: 23px;
   cursor: pointer;
   display: none;
+}
+
+/* scroll btn */
+.scroll-up-btn {
+  position: fixed;
+  height: 45px;
+  width: 42px;
+  background: #fa5947;
+  right: 30px;
+  bottom: 30px;
+  text-align: center;
+  color: #fff;
+  line-height: 45px;
+  z-index: 9999;
+  font-size: 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+.show {
+  bottom: 30px;
+  opacity: 1;
+  pointer-events: auto;
 }
 
 /* home section styling */
@@ -160,7 +191,8 @@ section {
 .skills,
 .teams,
 .experience,
-.contact {
+.contact,
+footer {
   font-family: "Poppins", sans-serif;
 }
 section .title {
@@ -665,6 +697,24 @@ section .title::after {
 }
 .social {
   margin: 5px;
+}
+
+/* footer styling */
+
+footer {
+  background: #111;
+  padding: 20px 23px;
+  color: #fff;
+  text-align: center;
+}
+
+footer span a {
+  color: #fa8072;
+  text-decoration: none;
+}
+
+footer span a:hover {
+  text-decoration: underline;
 }
 
 /* responsive styling  */
