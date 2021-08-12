@@ -699,6 +699,14 @@ section .title::after {
   margin: 5px;
 }
 
+.email-icon {
+  width: 18px;
+}
+
+.follow-icon {
+  width: 12px;
+}
+
 /* footer styling */
 
 footer {
