@@ -23,6 +23,8 @@
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
                 integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
                 crossorigin="anonymous" referrerpolicy="no-referrer" />
+                <script src="https://smtpjs.com/v3/smtp.js">
+</script>
 </head>
 <body>
 
@@ -464,6 +466,14 @@
                                     
                                     </div>
                                     <div class="social">
+                                        <a href="https://www.hackerrank.com/Singhsharad529" target="_blank"><i class="fab fa-hackerrank"></i></a>
+                                    
+                                    </div>
+                                    <div class="social">
+                                        <a href="https://www.codechef.com/users/singhsharad529" target="_blank"><i class="fab fa-cuttlefish"></i></a>
+                                    
+                                    </div>
+                                    <div class="social">
                                         <a href="https://www.facebook.com/sharad.singh.712714" target="_blank"><i class="fab fa-facebook-square"></i></a>
                                     
                                     </div>
@@ -471,6 +481,8 @@
                                         <a href="https://twitter.com/singhsharad529" target="_blank"><i class="fab fa-twitter-square"></i></a>
                                     
                                     </div>
+                                  
+
 
                                 </div>
                                
@@ -482,13 +494,13 @@
                 </div>
                 <div class="column right">
                     <div class="text">Message Me</div>
-                    <form action="/" id="formData"  method="post" >
+                    <form id="myForm"    >
                         <div class="fields">
                             <div class="field name">
-                                <input type="text" name="name" placeholder="Name" required>
+                                <input type="text" name="name" id="name" placeholder="Name" required>
                             </div>
                             <div class="field name">
-                                <input type="email" placeholder="Email" required>
+                                <input type="email" name="email" id="email" placeholder="Email" required>
                             </div>
                            
 
@@ -496,10 +508,10 @@
                             
                         </div>
                         <div class="field">
-                            <input type="text" name="email" placeholder="Subject" required>
+                            <input type="text" name="subject" id="subject" placeholder="Subject" required>
                         </div>
                         <div class="field textarea">
-                            <textarea class="textarea1" name="desc" id="" cols="30" rows="10" placeholder="Something write"></textarea>
+                            <textarea class="textarea1" name="desc" id="desc" cols="30" rows="10" placeholder="Something write"></textarea>
                         </div>
                         
                         <div class="button">
@@ -528,32 +540,45 @@
 
   <script src="./script.js">
 
-    function sendEmail() {
-         formData.onsubmit = async (e) => {
-            e.preventDefault();
+    
 
-            let response = await fetch('/', {
-                method: 'POST',
-                body: new FormData(formData)
-            });
+       
+   
+    </script>
+    <script>
+        //  const myForm = document.getElementById("myForm");
+        //     myForm.addEventListener("submit", (e) => {
+        //         e.preventDefault();
+        //       var name=document.getElementById("name").value;
+        //       var email=document.getElementById("email").value;
+        //       var subject = document.getElementById("subject").value;
+        //       var desc=document.getElementById("desc").value
+        //       console.log(name,email,subject,desc);
 
-            let result = await response.json();
 
-            alert(result.message);
-        };
-
-        // Email.send({
+        //     Email.send({
         //     Host: "smtp.gmail.com",
-        //     Username: "<sender’s email address>",
-        //     Password: "<email password>",
-        //     To: '<recipient’s email address>',
-        //     From: "<sender’s email address>",
-        //     Subject: "<email subject>",
-        //     Body: "<email body>",
+        //     Username: "singhsharad529@gmail.com",
+        //     Password: "Blackboardtable123@",
+        //     To: email,
+        //     From: "singhsharad529@gmail.com",
+        //     Subject:subject,
+        //     Body: desc,
         // }).then(
-        //     message => alert("mail sent successfully")
+        //     message => {
+        //         if(message=='OK'){
+        //             alert('message sent');
+        //         }
+        //         else{
+        //             console.log(message);
+        //             alert('there is some problem to sent msg')
+        //         }
+        //     }
         // );
-    }
+        //         console.log('submitted');
+        //     })
+
+            
     </script>
 </body>
 </html>
