@@ -691,6 +691,11 @@ section .title::after {
   background: none;
 }
 
+.map {
+  width: 400px !important;
+  height: 300px;
+}
+
 .allmedia {
   display: flex;
   justify-content: center;
@@ -738,6 +743,9 @@ footer span a:hover {
     height: 320px;
     width: 270px;
   }
+  /* .map {
+    width: 100px !important;
+  } */
 }
 
 @media (max-width: 991px) {
@@ -896,5 +904,10 @@ footer span a:hover {
   }
   .content {
     padding: 20px 0px;
+  }
+
+  .map {
+    width: 280px !important;
+    height: 220;
   }
 }
