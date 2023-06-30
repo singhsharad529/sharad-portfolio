@@ -258,7 +258,7 @@ section .title::after {
 }
 
 .about .about-content .left img {
-  height: 380px;
+  height: 400px;
   width: 330px;
   object-fit: cover;
   border-radius: 5px;
@@ -353,11 +353,26 @@ section .title::after {
   color: #fff;
 }
 
+.services .serv-content .card:hover .project-anchor span {
+  color: #fff;
+}
+
 .services .serv-content .card .text {
   font-size: 25px;
   font-weight: 500;
   margin: 10px 0 7px 0;
+} 
+
+.project-anchor{
+  text-decoration: none;
+  color: white;
 }
+
+.project-anchor span{
+  color: #fa8072;
+}
+
+
 
 /* skills section styling */
 
@@ -423,6 +438,11 @@ section .title::after {
   left: 0;
   top: 0;
   background: #fa8072;
+}
+
+.skill-div p{
+  color: #fa8072;
+  font-weight: bold;
 }
 
 .skills .skills-content .right .cjava::before {
