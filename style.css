@@ -193,7 +193,7 @@ html {
 
 /* all similiar styling */
 section {
-  padding: 100px 0;
+padding: 45px 0;
 }
 
 .about .about-content,
@@ -926,12 +926,12 @@ footer span a:hover {
   }
   .home .home-content .text-2 {
     text-align: center;
-    font-size: 50px;
+    font-size: 40px;
   }
 
   .home .home-content .text-3 {
     text-align: center;
-    font-size: 28px;
+    font-size: 22px;
   }
   .home .home-content {
     text-align: center;
