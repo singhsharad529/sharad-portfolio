@@ -250,7 +250,7 @@ section .title::after {
 /* about section styling */
 
 .about .title::after {
-  content: "Who I am";
+  content: "Who am I";
 }
 
 .about .about-content .left {
