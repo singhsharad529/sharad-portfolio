@@ -193,7 +193,7 @@ html {
 
 /* all similiar styling */
 section {
-padding: 45px 0;
+  padding: 45px 0;
 }
 
 .about .about-content,
@@ -204,7 +204,7 @@ padding: 45px 0;
   flex-wrap: wrap;
   align-items: center;
 
-  justify-content: space-between;
+  justify-content: center;
 }
 .about,
 .services,
@@ -328,6 +328,7 @@ section .title::after {
   padding: 20px 25px;
   cursor: pointer;
   transition: all 0.3s ease;
+  margin: 0.4em;
 }
 .services .serv-content .card:hover {
   background: #fa8072;
@@ -361,18 +362,16 @@ section .title::after {
   font-size: 25px;
   font-weight: 500;
   margin: 10px 0 7px 0;
-} 
+}
 
-.project-anchor{
+.project-anchor {
   text-decoration: none;
   color: white;
 }
 
-.project-anchor span{
+.project-anchor span {
   color: #fa8072;
 }
-
-
 
 /* skills section styling */
 
@@ -382,6 +381,7 @@ section .title::after {
 
 .skills .skills-content .column {
   width: calc(50% - 30px);
+  margin: 0.5em;
 }
 
 .skills .skills-content .left .text {
@@ -440,7 +440,7 @@ section .title::after {
   background: #fa8072;
 }
 
-.skill-div p{
+.skill-div p {
   color: #fa8072;
   font-weight: bold;
 }
